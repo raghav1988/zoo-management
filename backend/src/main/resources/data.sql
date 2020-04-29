@@ -1,0 +1,2 @@
+INSERT INTO zoo VALUES (1,'Pune','NAtional',80),(2,'UK','NIT',0),(3,'UK','NIT',30);
+INSERT INTO animal VALUES (1,30,'Lion','MAMMAL',1),(2,30,'Lion','MAMMAL',1),(3,30,'Lion','MAMMAL',1),(4,30,'Lion','MAMMAL',1);

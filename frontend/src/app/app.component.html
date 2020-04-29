@@ -1,0 +1,13 @@
+<div class="well" id="heading">
+    <h1 style='color: white;'>{{title}}</h1>
+    </div><br/>
+    <div class="well">
+    <animal-list  (clickSender)="editAnimal($event)"></animal-list>
+    <hr>
+    <animal-edit-detail [selectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()"></animal-edit-detail>
+    <hr>
+    <button (click)="hideAddAnimal()">{{addAnimalText}}</button>
+  <div [hidden]="hideAdd">
+    <animal-add (newAnimalSender)="addAnimal($event)"></animal-add>
+    </div>
+    </div>

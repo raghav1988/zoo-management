@@ -1,0 +1,23 @@
+<div>
+    <div *ngIf="selectedAnimal">
+      <h3>{{selectedAnimal.name}}</h3><br/>
+      <hr>
+      <h3>Edit Animal Details</h3><br/>
+      <label>Enter Animal Name:</label><br/>
+      <input [(ngModel)]="selectedAnimal.name"><br/>
+      <label>Enter Animal Age:</label><br/>
+      <input [(ngModel)]="selectedAnimal.age" type="number"><br/>
+      <label>Enter Animal Sex:</label><br/>
+      <select [(ngModel)]="selectedAnimal.sex">
+        <option *ngFor="let c of sexes" [ngValue]="c">{{c}}</option>
+      </select>
+      <br/>
+      <label>Enter Animal Location:</label><br/>
+      <input [(ngModel)]="selectedAnimal.location"><br/>
+      <label>Enter Animal Likes:</label><br/>
+      <input [(ngModel)]="selectedAnimal.likes"><br/>
+      <label>Enter Animal Dislikes:</label><br/>
+      <input [(ngModel)]="selectedAnimal.dislikes"><br/>
+      <button (click)="finishedEditing()">Done</button><br/>
+    </div>
+  </div>`

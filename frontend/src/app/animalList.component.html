@@ -1,0 +1,17 @@
+<select id="animalData" class="filter" (change)="onChangeAge($event.target.value)">
+  <option>All</option>
+    <option *ngFor="let zoo of zooList" [value]="zoo | json ">{{zoo.zooLocation}}</option>
+  </select>
+<div>
+    <span style="padding-left: 900px;font-weight: bold;">No of Animals :</span>
+    <span>{{animalCount}}</span>
+</div>
+<h2>Animals List of Delhi Zoo!!</h2>
+<div id="list2" style="display: inherit;">
+<ul>
+  <svg *ngFor="let currentAnimal of responseData" width="250" height="75">
+    <circle style="cursor: pointer;" cx="50" cy="50" r="20" fill="red" (click)="onAnimalOperation(currentAnimal)"/>
+    <text x="100" y="50">{{currentAnimal.animal}}</text>
+</svg>
+</ul>
+</div>
