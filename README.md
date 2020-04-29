@@ -5,7 +5,7 @@
 
 # move to backend folder
  cd backend
- ./mvnw clean install
+./mvnw clean install -DskipTests
 # move target folder 
 java -jar zoo-1.0.jar
 
@@ -19,15 +19,15 @@ npm start
 
 
 # swagger API 
-# http://localhost:8080/swagger-ui.html
+ http://localhost:8080/swagger-ui.html
 
 # Database
-# http://localhost:8080/h2
+http://localhost:8080/h2
 
 # Technology used for this Application
 
-# Angular 
-# Spring Boot
-# h2-database
-# Swagger API for viewing API
+ Angular 
+ Spring Boot
+ h2-database
+  Swagger API for viewing API
 
