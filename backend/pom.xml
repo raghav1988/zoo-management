@@ -9,7 +9,7 @@
 		<version>2.2.6.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.xebia.assgnment</groupId>
+	<groupId>com.zoo.assgnment</groupId>
 	<artifactId>zoo</artifactId>
 	<version>1.0</version>
 	<packaging>jar</packaging>

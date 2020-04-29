@@ -6,9 +6,9 @@ import { AnimalEditDetailComponent } from './animalEditDetail.component';
 import { AnimalAddComponent } from './animalAdd.component';
 import { AnimalListComponent } from './animalList.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { HttpClientModule }    from '@angular/common/http';
 @NgModule({
-  imports: [BrowserModule, FormsModule, BrowserAnimationsModule],
+  imports: [BrowserModule, FormsModule, BrowserAnimationsModule, HttpClientModule,],
   declarations: [ AppComponent, AnimalEditDetailComponent, AnimalAddComponent, AnimalListComponent],
   bootstrap:    [ AppComponent ]
 })
