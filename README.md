@@ -4,18 +4,18 @@
 # Backend command
 
 # move to backend folder
-# cd backend
-# ./mvnw clean install
+ cd backend
+ ./mvnw clean install
 # move target folder 
-# java -jar zoo-1.0.jar
+java -jar zoo-1.0.jar
 
 
 # Frontend 
 
-# move to frontend directory
-# cd frontend
-# npm install
-# npm start
+move to frontend directory
+cd frontend
+npm install
+npm start
 
 
 # swagger API 
