@@ -1,6 +1,6 @@
 import { Component, Output, EventEmitter } from '@angular/core';
 import { Animal } from './animal.model';
-
+import {ZooserviceService} from './zooservice.service';
 @Component({
   selector: 'animal-add',
   templateUrl: './animalAdd-component.html',
@@ -8,9 +8,18 @@ import { Animal } from './animal.model';
 })
 
 export class AnimalAddComponent {
+
+
+
   @Output() newAnimalSender = new EventEmitter();
-  submitForm(name: string, age: number, location: string, likes: string, dislikes: string, sex: string) {
-    var newAnimalToAdd: Animal = new Animal(name, age, location, likes, dislikes, sex);
-    this.newAnimalSender.emit(newAnimalToAdd);
+
+
+  constructor(private zooService: ZooserviceService) { }
+  submitForm(name: string,dislikes: string) {
+  var newAnimalToAdd: Animal = new Animal(name,dislikes);
+   // this.newAnimalSender.emit(newAnimalToAdd);
+    this.zooService.saveAnimalInfoByZooId(newAnimalToAdd).subscribe((data)=>{
+      alert("data saved successfully..");
+    })
   }
 }

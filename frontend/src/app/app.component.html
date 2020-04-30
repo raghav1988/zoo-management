@@ -4,8 +4,8 @@
     <div class="well">
     <animal-list  (clickSender)="editAnimal($event)"></animal-list>
     <hr>
-    <animal-edit-detail [selectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()"></animal-edit-detail>
-    <hr>
+   <!-- <animal-edit-detail [selectedAnimal]="selectedAnimal" (doneButtonClickedSender)="finishedEditing()"></animal-edit-detail>
+   --> <hr>
     <button (click)="hideAddAnimal()">{{addAnimalText}}</button>
   <div [hidden]="hideAdd">
     <animal-add (newAnimalSender)="addAnimal($event)"></animal-add>
