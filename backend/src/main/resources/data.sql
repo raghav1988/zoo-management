@@ -1,2 +1,0 @@
-INSERT INTO zoo VALUES (1,'Pune','NAtional',80),(2,'Delhi','NIT',0),(3,'Gwalior','NIT',30);
-INSERT INTO animal VALUES (1,30,'Lion','forest',1),(2,30,'Elephant','forest',1),(3,30,'Bear','forest',1),(4,30,'Bird','forest',1),(5,30,'Bird','forest',2),(6,30,'Tiger','forest',2),(7,30,'Tiger','forest',3);

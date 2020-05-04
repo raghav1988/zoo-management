@@ -1,5 +1,7 @@
 package com.zoo.assignment.dto;
 
+import javax.validation.constraints.NotBlank;
+
 import com.zoo.assignment.entity.Zoo;
 
 import lombok.AllArgsConstructor;
@@ -16,7 +18,9 @@ import lombok.ToString;
 public class ZooDTO {
 
 	private Long id;
+	@NotBlank
 	private String name;
+	@NotBlank
 	private String location;
 	private Long total;
 
